@@ -1,5 +1,8 @@
 import "./App.css";
 import Plx from "react-plx";
+import background from './assets/background.jpg';
+import bg from './assets/bg.png';
+import text from './assets/text-img.webp';
 
 export default function App() {
   return (
@@ -27,7 +30,7 @@ export default function App() {
           zIndex: 100
         }}
       >
-        <img style={{ width: "100%" }} src="bg.png" alt="foreground" />
+        <img style={{ width: "100%" }} src={bg}  />
       </Plx>
       <Plx
         parallaxData={[
@@ -50,7 +53,7 @@ export default function App() {
           width: "100%"
         }}
       >
-        <img style={{ width: "100%" }} src="background.jpg" alt="background" />
+        <img style={{ width: "100%" }} src={background}/>
       </Plx>
       <Plx
         parallaxData={[
@@ -77,8 +80,8 @@ export default function App() {
           style={{
             width: "30vw"
           }}
-          src="/text-img.webp"
-          alt="Goonies"
+          src={text}
+          alt="Load failed"
         />
       </Plx>
       <div
